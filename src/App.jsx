@@ -1,15 +1,23 @@
-import { Routes, Route } from "react-router-dom";
-import LandingPage from "./pages/LandingPage";
-import Collection from "./pages/Collection";
-import Event from "./pages/Event";
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Landing from './pages/Landing/HomeSection';
+import Collection from './pages/Collection/Collection';
+import Event from './pages/Event/Event';
+import AboutUs from './pages/AboutUs/AboutUs';
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<LandingPage />} />
-      <Route path="/collection" element={<Collection />} />
-      <Route path="/event" element={<Event />} />
-    </Routes>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/collection" element={<Collection />} />
+        <Route path="/event" element={<Event />} />
+        <Route path="/about" element={<AboutUs />} />
+      </Routes>
+      <Footer />
+    </>
   );
 }
 
