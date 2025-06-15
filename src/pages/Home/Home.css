@@ -1,0 +1,28 @@
+.homePage {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+.contentSect {
+    padding: 14vmin 0 7vmin 0;
+    margin-left: 7vmin;
+    margin-right: 7vmin;
+    height: calc(100% - 21vmin);
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.listKegiatan {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+

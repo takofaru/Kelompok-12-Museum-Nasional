@@ -1,10 +1,14 @@
 import "../index.css";
+import "./CardView.css";
 
 function CardView({image, title}) {
     return (
         <>
-            <img src={image}/>
-            <h3>{title}</h3>
+            <div className="card">
+                <div className="bgCardText"></div>
+                <h3>{title}</h3>
+                <img src={image}/>
+            </div>
         </>
     );
 }
