@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@Components/*": [
+                "components/*"
+            ],
+            "@Assets/*": [
+                "assets/*"
+            ],
+            "@Json/*": [
+                "json/*"
+            ],
+            "@Pages/*": [
+                "pages/*"
+            ]
+        }
+    },
+    "include": [
+        "."
+    ]
+}

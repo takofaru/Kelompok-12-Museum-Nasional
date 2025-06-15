@@ -1,15 +1,16 @@
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import '../index.css';
 
 function Navbar() {
   return (
     <nav className="navbar">
-      <div className="logo">Museum</div>
+      <div className="logo"><img src='../assets/logo/museumNasional.svg'/></div>
       <ul className="nav-links">
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/collection">Collection</Link></li>
-        <li><Link to="/event">Events</Link></li>
-        <li><Link to="/about">About Us</Link></li>
+        <li><Link to="/"><p>Beranda</p></Link></li>
+        <li><Link to="/collection"><p>Koleksi</p></Link></li>
+        <li><Link to="/event"><p>Kegiatan</p></Link></li>
+        <li><Link to="/about"><p>Tentang Kami</p></Link></li>
       </ul>
     </nav>
   );
