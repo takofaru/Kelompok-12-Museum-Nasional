@@ -1,10 +1,23 @@
-function Eventa() {
+import "./Event.css";
+import "../../components/CardView.css";
+import CardView from "../../components/CardView";
+import kegiatanData from "../../json/JsonKegiatan.json";
+
+function Collection() {
   return (
-    <div style={{ padding: "2rem" }}>
-      <h1>Event Page</h1>
-      <p>Welcome to the museum!</p>
+    <div className="Event-page">
+      <h1 className="Event-title">Koleksi</h1>
+      <div className="Event-grid">
+        {kegiatanData.kegiatan.map((item) => (
+          <CardView
+            key={item.id}
+            title={item.nama}
+            image={item.image}
+          />
+        ))}
+      </div>
     </div>
   );
 }
 
-export default Eventa;
+export default Collection;

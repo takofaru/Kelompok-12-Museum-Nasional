@@ -1,0 +1,22 @@
+.Event-page {
+  padding-top: 14vmin; 
+  margin-left: 7vmin;
+  margin-right: 7vmin;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.Event-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Default: 3 kolom */
+.Event-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  justify-items: center;
+}
