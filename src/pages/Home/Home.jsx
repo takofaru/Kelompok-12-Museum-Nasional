@@ -7,12 +7,9 @@ import "./Home.css"
 function LandingSection() {
     return (
         <section>
-            <div className="contentSect">
-                <div className="landingImage"></div>
-                <div className="landingGradient">
-                    <div className="landingSolid"></div>
-                    <div className="landingFade"></div>
-                </div>
+            <div className="landingSect">
+                <img src="../../assets/images/landing.jpg" />
+                <div className="landingGradient"></div>
                 <div className="landingText">
                     <h3>Selamat datang di</h3>
                     <h1>Museum Nasional <br/> Indonesia</h1>
@@ -28,17 +25,16 @@ function ArtefakOfTheDay() {
     const random = items[Math.floor(Math.random() * items.length)];
 
     return(
-        <section>
-            <div className="contentSect">
-                <div className="artefakLeft">
-                    <img src={random.image} alt={random.nama} />
-                    <div className="artefakGradient"></div>
-                </div>
-                <div className="artefakRight">
-                    <h2>Artefak of The Day</h2>
-                    <h2>{random.nama}</h2>
-                </div>
-            </div>
+        <section className="artefakSection">
+            <div className="artefakLeft">
+            <img src={random.image} alt={random.nama} className="artefakImage" />
+            <div className="artefakGradient"></div>
+        </div>
+        <div className="artefakRight">
+            <h2>Artefak of The Day</h2>
+            <h2>{random.nama}</h2>
+            <button>Kenali Lebih Lanjut</button>
+        </div>
         </section>
     );
 }
@@ -50,7 +46,7 @@ function Kegiatan() {
             <div className="contentSect">
                 <h2>Kegiatan di Museum Nasional</h2>
                 <div className="listKegiatan">
-                    {items.slice(0, 3).map((item) => (
+                    {items.slice(0, 4).map((item) => (
                         <CardView
                             key={item.id}
                             title={item.nama} 

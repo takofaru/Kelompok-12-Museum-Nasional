@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
-body {
+body, html {
     /* position: absolute; */
     /* top: 0; */
     margin: 0;
@@ -23,18 +23,32 @@ h4, p {
     font-weight: normal;
 }
 h1 {
-    font-size: 8vmax;
+    font-size: 14vmin;
     width: fit-content;
     margin: 0;
 }
 
 h2 {
-    font-size: 96;
+    font-size: 6vmin;
     width: fit-content;
 }
 
 h3 {
-    font-size: 32;
+    font-size: 3vmin;
     width: fit-content;
 }
 
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+footer {
+    position: relative;
+    scroll-snap-type: end;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+}

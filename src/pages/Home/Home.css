@@ -1,5 +1,5 @@
 .homePage {
-    height: 100vh;
+    height: 100%;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
 }
@@ -14,9 +14,67 @@ section {
     margin-left: 7vmin;
     margin-right: 7vmin;
     height: calc(100% - 21vmin);
-    /* justify-content: center; */
     align-items: center;
 }
+
+.landingSect {
+    display: flex;
+    padding: 14vmin 0 7vmin 0;
+    margin-left: 7vmin;
+    margin-right: 7vmin;
+    height: calc(100% - 21vmin);
+    justify-content: left;
+    align-items: center;
+}
+
+.landingGradient {
+    position: absolute;
+    width: 100%;
+    height: calc(100% + 21vh);
+    background: linear-gradient(to right, #030B16 60%, transparent 100%);
+    margin: -14vmin -7vmin -7vmin -7vmin;
+}
+
+.landingText {
+    position: absolute;
+    color: white
+}
+
+.landingSect img {
+    position: absolute;
+    height: 100%;
+    background-image: "../../assets/images/landing.jpg";
+    right: 0;
+}
+
+.artefakGroup {
+    height: 100%;
+    width: 100%;
+}
+
+/* .artefakLeft { */
+/*     overflow: hidden; */
+/*     position: relative; */
+/*     right: 20vw; */
+/*     height: 100%; */
+/*     margin: -14vmin 0 -7vmin 0; */
+/*     margin-left: -7vmin; */
+/*     margin-right: -7vmin; */
+/* } */
+/**/
+/* .artefakLeft img { */
+/*     position: absolute; */
+/*     height: calc(100% + 21vmin); */
+/* } */
+/**/
+/* .artefakGradient { */
+/*     position: absolute; */
+/*     right: 20vw; */
+/*     width: calc(100vh + 21vmin); */
+/*     height: calc(100% + 21vmin); */
+/*     object-fit: cover; */
+/*     background: linear-gradient(to left, #FFF9F0, transparent); */
+/* } */
 
 .listKegiatan {
     display: flex;
@@ -25,4 +83,57 @@ section {
     justify-content: space-between;
 }
 
+.artefakSection {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.artefakLeft {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.artefakImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.artefakGradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, #FFF9F0, transparent 60%);
+  z-index: 1;
+}
+
+.artefakRight {
+  width: 50%;
+  background-color: #FFF9F0; /* or any soft beige */
+  padding: 8vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.artefakRight button {
+  padding: 0.75rem 1.5rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: bold;
+}
 
