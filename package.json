@@ -1,8 +1,8 @@
 {
-  "name": "kelompok-3-museum-nasional",
+  "name": "kelompok-12-museum-nasional",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://MohammadRizkiSyahputra.github.io/Kelompok-12-Museum-Nasional",
+  "homepage": "https://takofaru.github.io/Kelompok-12-Museum-Nasional",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy" : "gh-pages -d build"
+    "deploy" : "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.1.0",
