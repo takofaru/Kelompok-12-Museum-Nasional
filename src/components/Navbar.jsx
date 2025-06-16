@@ -10,7 +10,6 @@ function Navbar() {
         <li><Link to="/"><p>Beranda</p></Link></li>
         <li><Link to="/collection"><p>Koleksi</p></Link></li>
         <li><Link to="/event"><p>Kegiatan</p></Link></li>
-        <li><Link to="/about"><p>Tentang Kami</p></Link></li>
       </ul>
     </nav>
   );

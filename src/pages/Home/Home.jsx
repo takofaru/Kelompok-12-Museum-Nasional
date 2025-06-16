@@ -2,6 +2,7 @@ import CardView from "/components/CardView";
 import artefakData from "/json/JsonArtefak.json"
 import kegiatanData from "/json/JsonKegiatan.json"
 import "./Home.css"
+import Content from "../../pages/Content/Content";
 
 
 function LandingSection() {
@@ -33,7 +34,6 @@ function ArtefakOfTheDay() {
         <div className="artefakRight">
             <h2>Artefak of The Day</h2>
             <h2>{random.nama}</h2>
-            <button>Kenali Lebih Lanjut</button>
         </div>
         </section>
     );
@@ -49,8 +49,10 @@ function Kegiatan() {
                     {items.slice(0, 4).map((item) => (
                         <CardView
                             key={item.id}
+                            id={item.id}
                             title={item.nama} 
-                            image={item.image} 
+                            image={item.image}
+                            type="kegiatan"
                         />
                     ))}
                 </div>

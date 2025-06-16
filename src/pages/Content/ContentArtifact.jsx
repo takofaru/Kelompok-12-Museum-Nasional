@@ -5,7 +5,7 @@ function ArtefakPage() {
   const { id } = useParams();
   const artefak = artefakData.artefak.find(item => item.id === parseInt(id));
 
-  if (!kegiatan) return <h1>404 - Artefak tidak ditemukan</h1>;
+  if (!artefak) return <h1>404 - Artefak tidak ditemukan</h1>;
 
   return (
     <div className="artefakPage">

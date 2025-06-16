@@ -11,8 +11,10 @@ function Collection() {
         {kegiatanData.kegiatan.map((item) => (
           <CardView
             key={item.id}
+            id={item.id}
             title={item.nama}
             image={item.image}
+            type="kegiatan"
           />
         ))}
       </div>

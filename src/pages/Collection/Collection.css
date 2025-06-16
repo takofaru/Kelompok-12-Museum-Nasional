@@ -1,9 +1,8 @@
 .collection-page {
-  padding-top: 14vmin; 
-  margin-left: 7vmin;
-  margin-right: 7vmin;
-  width: 90vw;
-  margin: 0 auto;
+  padding: 14vmin 7vmin 7vmin 7vmin;
+  margin: 0;
+  width: auto;
+  background-color: #FFF9F0;
 }
 
 .collection-title {

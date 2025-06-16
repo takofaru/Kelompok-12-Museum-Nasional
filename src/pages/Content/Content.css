@@ -1,0 +1,39 @@
+
+.contentSect {
+    display: flex;
+    padding: 14vmin 7vmin 7vmin 7vmin;
+    margin: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 24px;
+    background-color: #FFF9F0;
+    width: auto;
+}
+
+.contentImage {
+    border-radius: 32px;
+    width: 24vw;
+}
+
+.contentSect * {
+    margin-bottom: 32px;
+}
+
+.goBackBtn {
+    font-family: "DM Sans";
+    font-size: 16px;
+    background-color: #030B16;
+    text-decoration: none;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 12px;
+}
+
+.contentFlex {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 48px
+}
